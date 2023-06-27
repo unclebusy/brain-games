@@ -1,0 +1,21 @@
+---
+
+# plugins:
+
+# https://eslint.org/docs/user-guide/configuring#specifying-environments
+env:
+  node: true
+
+extends:
+  - 'airbnb-base'
+
+parserOptions:
+  ecmaVersion: latest
+
+rules:
+  no-console: off
+  import/extensions: # FIXME: remove when rule will be adjusted for new nodejs version
+    - error
+    # - ignorePackages
+    - js: off
+  no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }]
