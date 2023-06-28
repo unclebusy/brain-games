@@ -43,7 +43,7 @@ const макеCalculation = () => {
       console.log('Correct!');
     }
     if (Number(answer) !== result) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was ${result}.\nLet's try again, ${name}!`);
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${result}.\nLet's try again, ${name}!`);
       return;
     }
   }
