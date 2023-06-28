@@ -10,9 +10,9 @@
   "license": "ISC",
   "type": "module",
   "bin": {
-    "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js",
-    "brain-calc": "bin/brain-calc.js"
+    "brain-games": "src/games/brain-games.js",
+    "brain-even": "src/games/brain-even.js",
+    "brain-calc": "src/games/brain-calc.js"
   },
   "dependencies": {
     "readline-sync": "^1.4.10"
