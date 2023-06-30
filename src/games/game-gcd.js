@@ -15,9 +15,9 @@ const searchCommonDevider = () => {
     }
   }
 
-  const rightAnswer = arr.join();
+  const correctAnswer = arr.join();
 
-  return [question, rightAnswer];
+  return [question, correctAnswer];
 };
 
 const gameGcd = () => {

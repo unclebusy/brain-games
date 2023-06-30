@@ -5,8 +5,8 @@ const greetings = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const evenNumber = () => {
   const questionNumber = makeRandomNumber(0, 100);
-  const rigthAnswer = questionNumber % 2 === 0 ? 'yes' : 'no';
-  return [questionNumber, rigthAnswer];
+  const correctAnswer = questionNumber % 2 === 0 ? 'yes' : 'no';
+  return [questionNumber, correctAnswer];
 };
 
 const gameEven = () => {

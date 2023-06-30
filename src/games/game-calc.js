@@ -8,25 +8,25 @@ const makeRandomMathExpression = () => {
   const randomNumberTwo = makeRandomNumber(0, 100);
   const randomMathSign = generateRandomMathSign();
   const question = `${randomNumberOne} ${randomMathSign} ${randomNumberTwo}`;
-  let rightAnswer;
+  let correctAnswer;
 
   switch (randomMathSign) {
     case '+':
-      rightAnswer = randomNumberOne + randomNumberTwo;
+      correctAnswer = randomNumberOne + randomNumberTwo;
       break;
     case '-':
-      rightAnswer = randomNumberOne - randomNumberTwo;
+      correctAnswer = randomNumberOne - randomNumberTwo;
       break;
     case '*':
-      rightAnswer = randomNumberOne * randomNumberTwo;
+      correctAnswer = randomNumberOne * randomNumberTwo;
       break;
     default:
       break;
   }
 
-  rightAnswer = String(rightAnswer);
+  correctAnswer = String(correctAnswer);
 
-  return [question, rightAnswer];
+  return [question, correctAnswer];
 };
 
 const gameCalc = () => {
