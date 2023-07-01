@@ -8,7 +8,7 @@ const makeProgression = () => {
   const missNumberPosinion = makeRandomNumber(0, 9);
   const stepProgression = makeRandomNumber(1, 10);
   const firtNumberProgression = makeRandomNumber(0, 100);
-  const question = [firtNumberProgression];
+  let question = [firtNumberProgression];
   let correctAnswer = firtNumberProgression;
 
   for (let i = 1; i < arrLength; i += 1) {
@@ -21,6 +21,7 @@ const makeProgression = () => {
     correctAnswer += stepProgression;
   }
 
+  question = question.join(' ');
   correctAnswer = String(correctAnswer);
 
   return [question, correctAnswer];
