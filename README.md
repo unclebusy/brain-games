@@ -8,8 +8,8 @@
 
 [Video tutorial on how to play Brain-Prime](https://asciinema.org/a/b9Kf3MmMiSefsz7rMg3CfLXsT)
 
-[Video tutorial on how to play Brain-Calc](https://asciinema.org/a/lmA37IzpEaZDc3scV9Q4hLPTR)
-
 [Video tutorial on how to play Brain-Even](https://asciinema.org/a/HvOFrrgf2UU9W2tDlgKLTD0KS)
+
+[Video tutorial on how to play Brain-Calc](https://asciinema.org/a/lmA37IzpEaZDc3scV9Q4hLPTR)
 
 [Video tutorial on how to play Brain-Gcd](https://asciinema.org/a/8dBmqA79Lx15Nn3V4V0lWWVxh)
