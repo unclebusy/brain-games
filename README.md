@@ -6,7 +6,9 @@
 
 ```sh
 git clone git@github.com:unclebusy/frontend-project-44.git
+
 cd frontend-project-44
+
 npm ci
 ```
 
