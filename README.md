@@ -38,8 +38,4 @@ brain-calc
 brain-gcd
 ```
 
-[![asciicast](https://i.ibb.co/jvZgMNb/111.jpg)](https://asciinema.org/a/uTZdExSEy5RBDf3d4dRxVid1q)
-[![asciicast](https://i.ibb.co/YcfLSF5/222.jpg)](https://asciinema.org/a/b9Kf3MmMiSefsz7rMg3CfLXsT)
-[![asciicast](https://i.ibb.co/ns49rny/333.jpg)](https://asciinema.org/a/yMBcCWDbOA0xaAxbVMOPhTSEH)
 [![asciicast](https://i.ibb.co/Vxjtmgx/444.jpg)](https://asciinema.org/a/lmA37IzpEaZDc3scV9Q4hLPTR)
-[![asciicast](https://i.ibb.co/7V12xjL/555.jpg)](https://asciinema.org/a/8dBmqA79Lx15Nn3V4V0lWWVxh)
