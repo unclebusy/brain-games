@@ -1,4 +1,4 @@
-import { generateRandomNumber } from '../utils.js';
+import generateRandomNumber from '../utils.js';
 import makeGame from '../index.js';
 
 const greetings = 'Answer "yes" if the number is even, otherwise answer "no".';

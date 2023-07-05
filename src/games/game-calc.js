@@ -1,7 +1,13 @@
-import { generateRandomNumber, generateRandomMathSign } from '../utils.js';
+import generateRandomNumber from '../utils.js';
 import makeGame from '../index.js';
 
 const greetings = 'What is the result of the expression?';
+
+const generateRandomMathSign = () => {
+  const mathSigns = ['+', '-', '*'];
+  const randomIndex = Math.floor(Math.random() * mathSigns.length);
+  return mathSigns[randomIndex];
+};
 
 const makeRandomMathExpression = () => {
   const randomNumberOne = generateRandomNumber(0, 100);
