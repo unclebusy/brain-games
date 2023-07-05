@@ -4,7 +4,7 @@
 
 ## Description
 
-The project implements console games with different mathematical logic:
+The Brain Game project implements console games with different mathematical logic:
 
 - Brain-Progression - a series of numbers is shown, forming an arithmetic progression, with the replacement of any of - the numbers with two dots, you need to write this number
 - Brain-Prime - a random number is shown and you need to answer yes if the number is prime, or no if not.
