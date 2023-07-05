@@ -22,7 +22,6 @@ Install dependencies and you can run games:
 git clone git@github.com:unclebusy/frontend-project-44.git
 cd frontend-project-44
 npm install
-npm ci
 npm link
 ```
 
