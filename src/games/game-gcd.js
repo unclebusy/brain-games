@@ -1,11 +1,11 @@
 import makeGame from '../index.js';
-import { makeRandomNumber } from '../utils.js';
+import { generateRandomNumber } from '../utils.js';
 
 const greetings = 'Find the greatest common divisor of given numbers.';
 
 const searchCommonDevider = () => {
-  const randomNumberOne = makeRandomNumber(0, 100);
-  const randomNumberTwo = makeRandomNumber(0, 100);
+  const randomNumberOne = generateRandomNumber(0, 100);
+  const randomNumberTwo = generateRandomNumber(0, 100);
   const question = `${randomNumberOne} ${randomNumberTwo}`;
   const arr = [1];
 

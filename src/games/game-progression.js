@@ -1,13 +1,13 @@
 import makeGame from '../index.js';
-import { makeRandomNumber } from '../utils.js';
+import { generateRandomNumber } from '../utils.js';
 
 const greetings = 'What number is missing in the progression?';
 
 const makeProgression = () => {
   const arrLength = 10;
-  const missNumberPosinion = makeRandomNumber(0, 9);
-  const stepProgression = makeRandomNumber(1, 10);
-  const firtNumberProgression = makeRandomNumber(0, 100);
+  const missNumberPosinion = generateRandomNumber(0, 9);
+  const stepProgression = generateRandomNumber(1, 10);
+  const firtNumberProgression = generateRandomNumber(0, 100);
   let question = [firtNumberProgression];
   let correctAnswer = firtNumberProgression;
 

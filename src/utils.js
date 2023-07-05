@@ -1,4 +1,4 @@
-const makeRandomNumber = (min, max) => Math.round(Math.random() * (min + max) + min);
+const generateRandomNumber = (min, max) => Math.round(Math.random() * (min + max) + min);
 
 const generateRandomMathSign = () => {
   const mathSigns = ['+', '-', '*'];
@@ -6,4 +6,4 @@ const generateRandomMathSign = () => {
   return mathSigns[randomIndex];
 };
 
-export { makeRandomNumber, generateRandomMathSign };
+export { generateRandomNumber, generateRandomMathSign };
