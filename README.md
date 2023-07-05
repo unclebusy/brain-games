@@ -26,23 +26,20 @@ npm ci
 npm link
 ```
 
-How to run games:
+## How to play
+
+Run games:
 
 ```sh
-Brain-Prime
-Brain-Even
-Brain-Calc
-Brain-Gcd
+brain-progression
+brain-prime
+brain-even
+brain-calc
+brain-gcd
 ```
 
-## How to play Brain Games
-
-[Video tutorial Brain-Progression](https://asciinema.org/a/uTZdExSEy5RBDf3d4dRxVid1q)
-
-[Video tutorial Brain-Prime](https://asciinema.org/a/b9Kf3MmMiSefsz7rMg3CfLXsT)
-
-[Video tutorial Brain-Even](https://asciinema.org/a/yMBcCWDbOA0xaAxbVMOPhTSEH)
-
-[Video tutorial Brain-Calc](https://asciinema.org/a/lmA37IzpEaZDc3scV9Q4hLPTR)
-
-[Video tutorial how to play Brain-Gcd](https://asciinema.org/a/8dBmqA79Lx15Nn3V4V0lWWVxh)
+[![asciicast](https://i.ibb.co/jvZgMNb/111.jpg)](https://asciinema.org/a/uTZdExSEy5RBDf3d4dRxVid1q)
+[![asciicast](https://i.ibb.co/YcfLSF5/222.jpg)](https://asciinema.org/a/b9Kf3MmMiSefsz7rMg3CfLXsT)
+[![asciicast](https://i.ibb.co/ns49rny/333.jpg)](https://asciinema.org/a/yMBcCWDbOA0xaAxbVMOPhTSEH)
+[![asciicast](https://i.ibb.co/Vxjtmgx/444.jpg)](https://asciinema.org/a/lmA37IzpEaZDc3scV9Q4hLPTR)
+[![asciicast](https://i.ibb.co/7V12xjL/555.jpg)](https://asciinema.org/a/8dBmqA79Lx15Nn3V4V0lWWVxh)
