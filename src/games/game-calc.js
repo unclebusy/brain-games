@@ -22,7 +22,7 @@ const generateCorrectAnswer = (numberOne, mathSign, numberTwo) => {
     answer = numberOne * numberTwo;
   }
 
-  return answer;
+  return String(answer);
 };
 
 const generateRoundData = () => {
@@ -30,9 +30,7 @@ const generateRoundData = () => {
   const randomNumberTwo = generateRandomNumber(0, 100);
   const randomMathSign = generateRandomMathSign();
   const question = `${randomNumberOne} ${randomMathSign} ${randomNumberTwo}`;
-
-  let correctAnswer = generateCorrectAnswer(randomNumberOne, randomMathSign, randomNumberTwo);
-  correctAnswer = String(correctAnswer);
+  const correctAnswer = generateCorrectAnswer(randomNumberOne, randomMathSign, randomNumberTwo);
 
   return [question, correctAnswer];
 };
