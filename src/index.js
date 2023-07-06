@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 const numberRoundsWon = 3;
 
-const makeGame = (greetings, getQuestion) => {
+const startGame = (greetings, getQuestion) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
@@ -13,7 +13,7 @@ const makeGame = (greetings, getQuestion) => {
     console.log(`Question: ${question}`);
     const playerAnswer = readlineSync.question('Your answer: ');
 
-    if (correctAnswer === String(playerAnswer.toLocaleLowerCase())) {
+    if (correctAnswer === playerAnswer.toLocaleLowerCase()) {
       console.log('Correct!');
     } else {
       console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
@@ -24,4 +24,4 @@ const makeGame = (greetings, getQuestion) => {
   console.log(`Congratulations, ${name}!`);
 };
 
-export default makeGame;
+export default startGame;

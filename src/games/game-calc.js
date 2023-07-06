@@ -1,5 +1,5 @@
 import generateRandomNumber from '../utils.js';
-import makeGame from '../index.js';
+import startGame from '../index.js';
 
 const greetings = 'What is the result of the expression?';
 
@@ -9,25 +9,21 @@ const generateRandomMathSign = () => {
   return mathSigns[randomIndex];
 };
 
-const makeRandomMathExpression = () => {
+const generateRoundData = () => {
   const randomNumberOne = generateRandomNumber(0, 100);
   const randomNumberTwo = generateRandomNumber(0, 100);
   const randomMathSign = generateRandomMathSign();
   const question = `${randomNumberOne} ${randomMathSign} ${randomNumberTwo}`;
   let correctAnswer;
 
-  switch (randomMathSign) {
-    case '+':
-      correctAnswer = randomNumberOne + randomNumberTwo;
-      break;
-    case '-':
-      correctAnswer = randomNumberOne - randomNumberTwo;
-      break;
-    case '*':
-      correctAnswer = randomNumberOne * randomNumberTwo;
-      break;
-    default:
-      break;
+  if (randomMathSign === '+') {
+    correctAnswer = randomNumberOne + randomNumberTwo;
+  }
+  if (randomMathSign === '-') {
+    correctAnswer = randomNumberOne - randomNumberTwo;
+  }
+  if (randomMathSign === '*') {
+    correctAnswer = randomNumberOne * randomNumberTwo;
   }
 
   correctAnswer = String(correctAnswer);
@@ -36,7 +32,7 @@ const makeRandomMathExpression = () => {
 };
 
 const gameCalc = () => {
-  makeGame(greetings, makeRandomMathExpression);
+  startGame(greetings, generateRoundData);
 };
 
 export default gameCalc;
