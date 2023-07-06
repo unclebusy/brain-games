@@ -12,17 +12,16 @@ const searchCommonDevider = (numberOne, numberTwo) => {
     }
   }
 
-  const correctAnswer = arr.join();
-    return;
-  }
+  const answer = arr.join();
 
-  const correctAnswer = arr.join();
+  return answer;
+};
 
 const isCommonDevider = () => {
   const randomNumberOne = generateRandomNumber(0, 100);
   const randomNumberTwo = generateRandomNumber(0, 100);
   const question = `${randomNumberOne} ${randomNumberTwo}`;
-
+  const correctAnswer = searchCommonDevider(randomNumberOne, randomNumberTwo);
 
   return [question, correctAnswer];
 };
