@@ -9,23 +9,29 @@ const generateRandomMathSign = () => {
   return mathSigns[randomIndex];
 };
 
+const generateCorrectAnswer = (numberOne, mathSign, numberTwo) => {
+  let answer;
+
+  if (mathSign === '+') {
+    answer = numberOne + numberTwo;
+  }
+  if (mathSign === '-') {
+    answer = numberOne - numberTwo;
+  }
+  if (mathSign === '*') {
+    answer = numberOne * numberTwo;
+  }
+
+  return answer;
+};
+
 const generateRoundData = () => {
   const randomNumberOne = generateRandomNumber(0, 100);
   const randomNumberTwo = generateRandomNumber(0, 100);
   const randomMathSign = generateRandomMathSign();
   const question = `${randomNumberOne} ${randomMathSign} ${randomNumberTwo}`;
-  let correctAnswer;
 
-  if (randomMathSign === '+') {
-    correctAnswer = randomNumberOne + randomNumberTwo;
-  }
-  if (randomMathSign === '-') {
-    correctAnswer = randomNumberOne - randomNumberTwo;
-  }
-  if (randomMathSign === '*') {
-    correctAnswer = randomNumberOne * randomNumberTwo;
-  }
-
+  let correctAnswer = generateCorrectAnswer(randomNumberOne, randomMathSign, randomNumberTwo);
   correctAnswer = String(correctAnswer);
 
   return [question, correctAnswer];
