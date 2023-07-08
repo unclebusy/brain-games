@@ -2,10 +2,10 @@ import startGame from '../index.js';
 import generateRandomNumber from '../utils.js';
 
 const greetings = 'What number is missing in the progression?';
+const arrLength = 10;
 
 const generationQuestion = (first, step, miss) => {
   const arr = [];
-  const arrLength = 10;
 
   for (let i = 0; i < arrLength; i += 1) {
     arr.push(first + i * step);
