@@ -6,14 +6,18 @@ const greetings = 'What is the result of the expression?';
 const generateCorrectAnswer = (numberOne, mathSign, numberTwo) => {
   let answer;
 
-  if (mathSign === '+') {
-    answer = numberOne + numberTwo;
-  }
-  if (mathSign === '-') {
-    answer = numberOne - numberTwo;
-  }
-  if (mathSign === '*') {
-    answer = numberOne * numberTwo;
+  switch (mathSign) {
+    case '+':
+      answer = numberOne + numberTwo;
+      break;
+    case '-':
+      answer = numberOne - numberTwo;
+      break;
+    case '*':
+      answer = numberOne * numberTwo;
+      break;
+    default:
+      throw new Error(`Invalid math sign: ${mathSign}`);
   }
 
   return String(answer);
