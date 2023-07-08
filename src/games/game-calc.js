@@ -5,7 +5,7 @@ const greetings = 'What is the result of the expression?';
 
 const generateRandomMathSign = () => {
   const mathSigns = ['+', '-', '*'];
-  const randomIndex = Math.floor(Math.random() * mathSigns.length);
+  const randomIndex = generateRandomNumber(0, 2);
   return mathSigns[randomIndex];
 };
 
