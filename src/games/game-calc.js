@@ -3,12 +3,6 @@ import startGame from '../index.js';
 
 const greetings = 'What is the result of the expression?';
 
-const generateRandomMathSign = () => {
-  const mathSigns = ['+', '-', '*'];
-  const randomIndex = generateRandomNumber(0, 2);
-  return mathSigns[randomIndex];
-};
-
 const generateCorrectAnswer = (numberOne, mathSign, numberTwo) => {
   let answer;
 
@@ -26,9 +20,11 @@ const generateCorrectAnswer = (numberOne, mathSign, numberTwo) => {
 };
 
 const generateRoundData = () => {
+  const mathSigns = ['+', '-', '*'];
   const randomNumberOne = generateRandomNumber(0, 100);
   const randomNumberTwo = generateRandomNumber(0, 100);
-  const randomMathSign = generateRandomMathSign();
+  const randomIndex = generateRandomNumber(0, 2);
+  const randomMathSign = mathSigns[randomIndex];
   const question = `${randomNumberOne} ${randomMathSign} ${randomNumberTwo}`;
   const correctAnswer = generateCorrectAnswer(randomNumberOne, randomMathSign, randomNumberTwo);
 
