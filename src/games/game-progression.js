@@ -3,10 +3,11 @@ import generateRandomNumber from '../utils.js';
 
 const greetings = 'What number is missing in the progression?';
 
-const generationQuestion = (first, length, step, miss) => {
+const generationQuestion = (first, step, miss) => {
   const arr = [];
+  const arrLength = 10;
 
-  for (let i = 0; i < length; i += 1) {
+  for (let i = 0; i < arrLength; i += 1) {
     arr.push(first + i * step);
   }
   arr[miss] = '..';
@@ -25,11 +26,10 @@ const generationAnswer = (number, step, miss) => {
 };
 
 const generationProgression = () => {
-  const arrLength = 10;
   const missPosinion = generateRandomNumber(0, 9);
   const stepProgression = generateRandomNumber(1, 10);
   const firstNumber = generateRandomNumber(0, 100);
-  const question = generationQuestion(firstNumber, arrLength, stepProgression, missPosinion);
+  const question = generationQuestion(firstNumber, stepProgression, missPosinion);
   const correctAnswer = generationAnswer(firstNumber, stepProgression, missPosinion);
 
   return [question, correctAnswer];
