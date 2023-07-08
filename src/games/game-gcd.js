@@ -17,7 +17,7 @@ const searchCommonDevider = (numberOne, numberTwo) => {
   return answer;
 };
 
-const isCommonDevider = () => {
+const generateRoundData = () => {
   const randomNumberOne = generateRandomNumber(0, 100);
   const randomNumberTwo = generateRandomNumber(0, 100);
   const question = `${randomNumberOne} ${randomNumberTwo}`;
@@ -27,7 +27,7 @@ const isCommonDevider = () => {
 };
 
 const gameGcd = () => {
-  startGame(greetings, isCommonDevider);
+  startGame(greetings, generateRoundData);
 };
 
 export default gameGcd;

@@ -25,7 +25,7 @@ const generationAnswer = (number, step, miss) => {
   return String(answer);
 };
 
-const generationProgression = () => {
+const generateRoundData = () => {
   const missPosinion = generateRandomNumber(0, 9);
   const stepProgression = generateRandomNumber(1, 10);
   const firstNumber = generateRandomNumber(0, 100);
@@ -36,7 +36,7 @@ const generationProgression = () => {
 };
 
 const gameProgression = () => {
-  startGame(greetings, generationProgression);
+  startGame(greetings, generateRoundData);
 };
 
 export default gameProgression;

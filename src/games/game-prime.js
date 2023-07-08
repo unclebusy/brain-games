@@ -16,7 +16,7 @@ const isPrime = (number) => {
   return 'yes';
 };
 
-const primeNumber = () => {
+const generateRoundData = () => {
   const randomNumber = generateRandomNumber(0, 100);
   const correctAnswer = isPrime(randomNumber);
 
@@ -24,7 +24,7 @@ const primeNumber = () => {
 };
 
 const gamePrime = () => {
-  startGame(greetings, primeNumber);
+  startGame(greetings, generateRoundData);
 };
 
 export default gamePrime;
