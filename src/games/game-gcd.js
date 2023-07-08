@@ -4,17 +4,16 @@ import generateRandomNumber from '../utils.js';
 const greetings = 'Find the greatest common divisor of given numbers.';
 
 const searchCommonDevider = (numberOne, numberTwo) => {
-  const arr = [1];
+  let a = numberOne;
+  let b = numberTwo;
 
-  for (let i = 2; i <= numberOne; i += 1) {
-    if (numberOne % i === 0 && numberTwo % i === 0 && i > arr[0]) {
-      arr[0] = i;
-    }
+  while (b !== 0) {
+    const temp = b;
+    b = a % b;
+    a = temp;
   }
 
-  const answer = arr.join();
-
-  return answer;
+  return String(a);
 };
 
 const generateRoundData = () => {
