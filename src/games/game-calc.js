@@ -4,23 +4,16 @@ import startGame from '../index.js';
 const greetings = 'What is the result of the expression?';
 
 const generateCorrectAnswer = (numberOne, mathSign, numberTwo) => {
-  let answer;
-
   switch (mathSign) {
     case '+':
-      answer = numberOne + numberTwo;
-      break;
+      return String(numberOne + numberTwo);
     case '-':
-      answer = numberOne - numberTwo;
-      break;
+      return String(numberOne - numberTwo);
     case '*':
-      answer = numberOne * numberTwo;
-      break;
+      return String(numberOne * numberTwo);
     default:
       throw new Error(`Invalid math sign: ${mathSign}`);
   }
-
-  return String(answer);
 };
 
 const generateRoundData = () => {
