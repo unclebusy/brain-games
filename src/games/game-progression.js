@@ -18,11 +18,11 @@ const generateRoundData = () => {
   const missPosinion = generateRandomNumber(0, 9);
   const stepProgression = generateRandomNumber(1, 10);
   const firstNumber = generateRandomNumber(0, 100);
-  let question = generateProgression(firstNumber, stepProgression);
-  const correctAnswer = String(question[missPosinion]);
+  const questionArr = generateProgression(firstNumber, stepProgression);
+  const correctAnswer = String(questionArr[missPosinion]);
 
-  question[missPosinion] = '..';
-  question = question.join(' ');
+  questionArr[missPosinion] = '..';
+  const question = questionArr.join(' ');
 
   return [question, correctAnswer];
 };
