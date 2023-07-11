@@ -4,7 +4,7 @@ import generateRandomNumber from '../utils.js';
 const greetings = 'What number is missing in the progression?';
 const arrLength = 10;
 
-const generationQuestion = (first, step) => {
+const generateProgression = (first, step) => {
   const arr = [];
 
   for (let i = 0; i < arrLength; i += 1) {
@@ -18,7 +18,7 @@ const generateRoundData = () => {
   const missPosinion = generateRandomNumber(0, 9);
   const stepProgression = generateRandomNumber(1, 10);
   const firstNumber = generateRandomNumber(0, 100);
-  let question = generationQuestion(firstNumber, stepProgression);
+  let question = generateProgression(firstNumber, stepProgression);
   const correctAnswer = String(question[missPosinion]);
 
   question[missPosinion] = '..';
