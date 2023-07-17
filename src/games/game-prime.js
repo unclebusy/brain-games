@@ -5,7 +5,7 @@ const greetings = 'Answer "yes" if given number is prime. Otherwise answer "no".
 
 const isPrime = (number) => {
   if (number < 2) {
-    return true;
+    return false;
   }
   const sqrtNumber = Math.floor(Math.sqrt(number));
 
