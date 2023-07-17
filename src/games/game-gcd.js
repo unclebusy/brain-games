@@ -3,7 +3,7 @@ import generateRandomNumber from '../utils.js';
 
 const greetings = 'Find the greatest common divisor of given numbers.';
 
-const searchCommonDevider = (numberOne, numberTwo) => {
+const getCommonDevider = (numberOne, numberTwo) => {
   let a = numberOne;
   let b = numberTwo;
 
@@ -13,14 +13,14 @@ const searchCommonDevider = (numberOne, numberTwo) => {
     a = temp;
   }
 
-  return String(a);
+  return a;
 };
 
 const generateRoundData = () => {
   const randomNumberOne = generateRandomNumber(0, 100);
   const randomNumberTwo = generateRandomNumber(0, 100);
   const question = `${randomNumberOne} ${randomNumberTwo}`;
-  const correctAnswer = searchCommonDevider(randomNumberOne, randomNumberTwo);
+  const correctAnswer = String(getCommonDevider(randomNumberOne, randomNumberTwo));
 
   return [question, correctAnswer];
 };
